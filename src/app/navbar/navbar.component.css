@@ -1,0 +1,4 @@
+/* CSS-only menu toggle for responsive navbar */
+#menu-toggle:checked + #menu {
+	display: block;
+}
