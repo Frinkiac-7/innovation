@@ -8,3 +8,11 @@
 		@apply bg-gradient-to-br from-blue-400 via-gray-700 to-blue-600 min-h-screen
 	}
 }
+
+.tooltip {
+	@apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+	@apply visible z-50
+}
