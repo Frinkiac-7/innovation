@@ -15,19 +15,32 @@
 
 	<div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
 		<nav>
-			<ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
-					<li>
-						<a routerLink="/home" routerLinkActive="active" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:text-indigo-400 hover:border-black hover:border-opacity-50 active:bg-green-700">Home</a>
-					</li>
-					<li>
-						<a routerLink="/bios" routerLinkActive="active" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:text-indigo-400 hover:border-black hover:border-opacity-50">Meet the Team</a>
-					</li>
-					<li>
-						<a routerLink="/opendataportal" routerLinkActive="active" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:text-indigo-400 hover:border-black hover:border-opacity-50">Open Data Portal</a>
-					</li>
-					<li>
-						<a href="http://worcesterma.gov" target="new" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:text-indigo-400 hover:border-black hover:border-opacity-50 active:bg-green-700 uppercase italic has-tooltip"><span class="tooltip text-sm normal-case -mt-4">Tooltip here</span>Worcesterma.gov</a>
-					</li>
+			<ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0 m-2">
+				<li>
+					<button class="m-2 bg-gradient-to-b from-blue-200 to-blue-400 hover:to-indigo-300 rounded-xl">
+						<a routerLink="/home" routerLinkActive="active" class="block lg:p-2 py-1 px-0 border-b-2 border-transparent hover:text-indigo-400 hover:border-black hover:border-opacity-50">Home</a>
+					</button>
+				</li>
+				<li>
+					<button class="m-2 bg-gradient-to-b from-blue-200 to-blue-400 hover:to-indigo-300 rounded-xl">
+						<a routerLink="/bios" routerLinkActive="active" class="block lg:p-2 py-1 px-0 border-b-2 border-transparent hover:text-indigo-400 hover:border-black hover:border-opacity-50">Meet the Team</a>
+					</button>
+				</li>
+				<li>
+					<button class="m-2 bg-gradient-to-b from-blue-200 to-blue-400 hover:to-indigo-300 rounded-xl">
+						<a routerLink="/opendataportal" routerLinkActive="active" class="block lg:p-2 py-1 px-0 border-b-2 border-transparent hover:text-indigo-400 hover:border-black hover:border-opacity-50">Open Data Portal</a>
+					</button>
+				</li>
+				<li>
+					<button class="m-2 bg-blue-500 hover: hover:bg-indigo-700 text-white p-1 rounded-xl hover:text-opacity-100 has-tooltip">
+						<a href="http://worcesterma.gov" target="new" class="uppercase text-sm block lg:p-2 py-1 px-0 border-b-2 border-transparent hover:text-indigo-400 hover:border-black hover:border-opacity-50">
+							<span class="tooltip text- normal-case -mt-3 italic hover:italic">
+								Visit
+							</span>
+							Worcesterma.gov
+						</a>
+					</button>
+				</li>
 			</ul>
 		</nav>
 	</div>
