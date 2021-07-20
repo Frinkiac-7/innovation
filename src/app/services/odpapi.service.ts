@@ -23,7 +23,11 @@ export class OdpapiService {
 	}
 
 	getFullApiResponse() {
-    return this.http.get<Odp[]>(this.url);
+    return this.http.get<Odp>(this.url).pipe(map((data) => {
+      // console.log('API returned ' + data.result.records.length + ' records');
+      console.log('API returned:', data);
+      return data;
+    }))
   }
 
 }

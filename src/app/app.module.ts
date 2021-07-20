@@ -9,6 +9,7 @@ import { OdportalComponent } from './odportal/odportal.component';
 import { HomeComponent } from './home/home.component';
 import { BiosComponent } from './bios/bios.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { InitiativesComponent } from './initiatives/initiatives.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NavbarComponent,
     OdportalComponent,
     HomeComponent,
-    BiosComponent
+    BiosComponent,
+    InitiativesComponent
   ],
   imports: [
     BrowserModule,

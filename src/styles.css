@@ -2,11 +2,22 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Oswald&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Oswald&family=Roboto&display=swap');
 
-@layer components {
-	body {
-		@apply bg-gradient-to-br from-blue-400 via-gray-700 to-blue-600 min-h-screen
-	}
+body {
+	background-color: #f7fff7;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: larger;
+}
+
+button {
+	font-family: 'Merriweather', sans-serif;
 }
 
 .tooltip {

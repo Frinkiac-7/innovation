@@ -10,14 +10,18 @@ import { Odp } from '../interfaces/odp';
 })
 export class OdportalComponent implements OnInit {
 
+	totalSets = 50;
+	public totalRecords!: Odp;
 	faChartLine = faChartLine;
 	faEye = faEye;
 	faStar = faStar;
-	private serviceResponse!: Odp
+	public serviceResponse!: Odp
 	
   getAPIData() {
 		this.api.getFullApiResponse().subscribe((data: any) => {
 			this.serviceResponse = data;
+			this.totalRecords = data.result.records.length
+			console.log('this.totalRecords:', this.totalRecords)
 			console.log('this.serviceResponse:', this.serviceResponse)
 		});
   }

@@ -1,56 +1,56 @@
-<!-- <h1 class="bg-red-400">Open Data Portal component</h1>
-<div class="px-4 filter sepia">
-	<div class="max-w-3xl bg-white rounded-lg mx-auto my-16 p-16">
-		<h1 class="text-2xl font-medium mb-2">Innovation Office</h1>
-		<h2 class="font-medium text-sm text-indigo-400 mb-4 uppercase tracking-wide">City of Worcester, MA</h2>
-		<p class="text-black">
-			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum labore error doloribus voluptatum maxime incidunt natus. In quibusdam voluptate reprehenderit praesentium autem incidunt, nihil soluta assumenda officia cum ab iusto.
-		</p>
-	</div>
-</div> -->
-
 <div class="px-4">
-	<div class="bg-center bg-contain bg-opendata text-white rounded-2xl mx-auto my-8 p-8 text-center">
+	<div class="bg-center bg-contain bg-img-opendata text-white rounded-2xl mx-auto my-8 p-8 text-center">
 		<h1 class="tracking-widest text-3xl font-medium mb-2">Open Data Portal</h1>
 		<h2 class="font-medium text-sm mb-4 uppercase tracking-wide">City of Worcester, MA</h2>
-		<p class="text-white text-sm">
+		<p class="text-white text-sm rounded-full m-4">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea laboriosam ullam dolore necessitatibus corporis repellat ratione fugit laborum illo quidem. Harum repellendus eius reprehenderit earum laudantium explicabo quidem enim architecto.
 		</p>
 	</div>
-</div>
-
-<!-- <div class="flex items-center justify-center h-screen"> -->
-<div class="max-w-max bg-white rounded-2xl m-4 p-3 justify-center place-content-center">
-	<h1 class="tracking-wide text-lg">Government Transparency through Data Access</h1>
-</div>
-<div class="max-w-max m-4">
-	<div class="grid lg:grid-cols-3 grid-cols-1 bg-white rounded-2xl">
-		<div class="m-4 gap-6 bg-gray-200 rounded-2xl mx-5 my-8 p-8 shadow-2xl hover:bg-green-100">
-			<h2 class="text-center border-b border-black mb-4">
-				<fa-icon [icon]="faChartLine" size="2x"></fa-icon>
-				Visualizations
-			</h2>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, eveniet blanditiis. Hic, architecto. Dicta velit aspernatur, doloremque quasi, quam rem expedita incidunt, in qui fugit non error aut facilis animi?
-		</div>
-		<div class="m-4 gap-6 bg-gray-200 rounded-2xl mx-5 my-8 p-8 shadow-2xl hover:bg-green-100">
-			<h2 class="text-center border-b border-black mb-4">
-				<fa-icon [icon]="faEye" size="2x"></fa-icon>
-				Dataset Statistics
-			</h2>
-			<p>
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum esse ab eos. Quisquam commodi possimus, quasi asperiores itaque laboriosam, est, quae veritatis maxime earum quas officia fugiat aperiam recusandae minus!
-			</p>
-			<button class="bg-green-300 rounded-md p-2 m-1" (click)="getAPIData()">Click Here</button>
-		</div>
-		<div class="m-4 gap-6 bg-gray-200 rounded-2xl mx-5 my-8 p-8 shadow-2xl hover:bg-green-100">
-			<h2 class="text-center border-b border-black mb-4">
-				<fa-icon [icon]="faStar" size="2x"></fa-icon>
-				Showcase
-			</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptas magni perspiciatis ducimus blanditiis sed id nostrum, odit molestiae rerum pariatur, ipsa quis laborum voluptatum iure, deserunt enim aliquid reprehenderit?
-			</p>
-			<button class="bg-green-300 rounded-md p-2 m-1" (click)="getAPIRecords()">Click Here</button>
-		</div>
-	</div>
+	<div class="bg-white shadow-xl rounded-2xl mx-5 my-8 p-8">
+		<h1 class="tracking-wide text-4xl">Government Transparency through Data Access</h1>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugit aperiam non cupiditate eos cum harum, alias maxime debitis. Voluptates hic iusto aut blanditiis error debitis nam odit, labore animi.
+		</p>
+		<div class="max-w-max m-4">
+			<div class="grid lg:grid-cols-3 grid-cols-1 rounded-2xl">
+				<div class="m-4 gap-6 bg-gray-200 rounded-2xl mx-5 my-8 p-8 shadow-2xl hover:bg-green-100">
+					<h2 class="text-center border-b border-black mb-4">
+						<fa-icon [icon]="faChartLine" size="2x"></fa-icon>
+						Visualizations
+					</h2>
+					<p>
+						Let's face it, raw data can be complex.  Sometimes searching through thousands of records isn't the optimal way to get answers.  Click below to see data visualizations designed by the Office of Urban Innovation to assist residents get the information they want quickly and easily.  
+					</p>
+					<button class="m-2 hover: bg-button hover:bg-gray-700 p-1 rounded-xl hover:text-opacity-100 has-tooltip">
+						<a href="https://public.tableau.com/profile/cityofworcesterma.innovationoffice/" target="new" class="uppercase text-sm block lg:p-2 py-1 px-0 hover:textblack">
+							<span class="tooltip text- normal-case -mt-3 italic hover:italic">
+								Visit
+							</span>
+							Tableau Public
+						</a>
+					</button>
+				</div>
+				<div class="m-4 gap-6 bg-gray-200 rounded-2xl mx-5 my-8 p-8 shadow-2xl hover:bg-green-100">
+					<h2 class="text-center border-b border-black mb-4">
+						<fa-icon [icon]="faEye" size="2x"></fa-icon>
+						Dataset Statistics
+					</h2>
+					<p>
+						So what does <strong class="italic">Informing Worcester</strong> offer?  The Innovation Office is constantly adding new datasets for public consumption.  Currently, there are {{ totalRecords }} comprising {{ totalRecords }} records. 
+					</p>
+					<button class="bg-green-300 rounded-md p-2 m-1" (click)="getAPIData()">Click Here</button>
+				</div>
+				<div class="m-4 gap-6 bg-gray-200 rounded-2xl mx-5 my-8 p-8 shadow-2xl hover:bg-green-100">
+					<h2 class="text-center border-b border-black mb-4">
+						<fa-icon [icon]="faStar" size="2x"></fa-icon>
+						Showcase
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptas magni perspiciatis ducimus blanditiis sed id nostrum, odit molestiae rerum pariatur, ipsa quis laborum voluptatum iure, deserunt enim aliquid reprehenderit?
+					</p>
+					<button class="bg-green-300 rounded-md p-2 m-1" (click)="getAPIRecords()">Click Here</button>
+				</div>
+			</div>
+		</div>	
+	</div>	
 </div>

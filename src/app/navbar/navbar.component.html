@@ -1,9 +1,9 @@
-<header class="flex flex-wrap items-center bg-white px-6 py-2">
+<header class="flex flex-wrap items-center bg-white lg:px-2 lg:py-2 px-2 py-2 border-black border-solid border-2 m-2">
 	<div class="flex-1 flex justify-between items-center">
 		<img src="../../assets/cow_logo-InlineStyle.svg" alt="" height="175" width="200">
 	</div>
 
-	<label for="menu-toggle" class="pointer-cursor lg:hidden block">
+	<label for="menu-toggle" class="lg:hidden block">
 		<svg class="fill-current text-gray-900"
 			xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
 			<title>menu</title>
@@ -15,25 +15,30 @@
 
 	<div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
 		<nav>
-			<ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0 m-2">
+			<ul class="lg:flex items-center justify-between text-base text-gray-100 pt-2 lg:pt-0 m-2">
 				<li>
-					<button class="m-2 bg-gradient-to-b from-blue-200 to-blue-400 hover:to-indigo-300 rounded-xl">
-						<a routerLink="/home" routerLinkActive="active" class="block lg:p-2 py-1 px-0 border-b-2 border-transparent hover:text-indigo-400 hover:border-black hover:border-opacity-50">Home</a>
+					<button class="bg-button m-2 rounded-xl">
+						<a routerLink="/home" routerLinkActive="active" class="block m-1 lg:p-2 py-1 px-0 hover:text-black">Home</a>
 					</button>
 				</li>
 				<li>
-					<button class="m-2 bg-gradient-to-b from-blue-200 to-blue-400 hover:to-indigo-300 rounded-xl">
-						<a routerLink="/bios" routerLinkActive="active" class="block lg:p-2 py-1 px-0 border-b-2 border-transparent hover:text-indigo-400 hover:border-black hover:border-opacity-50">Meet the Team</a>
+					<button class="m-2 bg-button hover:text-black rounded-xl">
+						<a routerLink="/initiatives" routerLinkActive="active" class="block m-1 lg:p-2 py-1 px-0 hover:text-black">Initiatives</a>
 					</button>
 				</li>
 				<li>
-					<button class="m-2 bg-gradient-to-b from-blue-200 to-blue-400 hover:to-indigo-300 rounded-xl">
-						<a routerLink="/opendataportal" routerLinkActive="active" class="block lg:p-2 py-1 px-0 border-b-2 border-transparent hover:text-indigo-400 hover:border-black hover:border-opacity-50">Open Data Portal</a>
+					<button class="m-2 bg-button hover:text-black rounded-xl">
+						<a routerLink="/opendataportal" routerLinkActive="active" class="block m-1 lg:p-2 py-1 px-0 hover:text-black">Open Data</a>
 					</button>
 				</li>
 				<li>
-					<button class="m-2 bg-blue-500 hover: hover:bg-indigo-700 text-white p-1 rounded-xl hover:text-opacity-100 has-tooltip">
-						<a href="http://worcesterma.gov" target="new" class="uppercase text-sm block lg:p-2 py-1 px-0 border-b-2 border-transparent hover:text-indigo-400 hover:border-black hover:border-opacity-50">
+					<button class="m-2 bg-button hover:text-black rounded-xl">
+						<a routerLink="/bios" routerLinkActive="active" class="block m-1 lg:p-2 py-1 px-0 hover:text-black">Meet the Team</a>
+					</button>
+				</li>
+				<li>
+					<button class="m-2 hover: bg-button hover:bg-gray-700 p-1 rounded-xl hover:text-opacity-100 has-tooltip">
+						<a href="http://worcesterma.gov" target="new" class="uppercase text-sm block lg:p-2 py-1 px-0 hover:textblack">
 							<span class="tooltip text- normal-case -mt-3 italic hover:italic">
 								Visit
 							</span>
