@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt, faIdCard, faRobot, faFileContract, faSchool, faSearchPlus } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-initiatives',
@@ -9,7 +9,12 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 export class InitiativesComponent implements OnInit {
 
 	faExtLinkAlt = faExternalLinkAlt;
-	
+	faIdCard = faIdCard;
+	faRobot = faRobot;
+	faFileContract = faFileContract;
+	faSchool = faSchool;
+	faSearchPlus = faSearchPlus;
+
   constructor() { }
 
   ngOnInit(): void {
