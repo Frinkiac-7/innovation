@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-initiatives',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InitiativesComponent implements OnInit {
 
+	faExtLinkAlt = faExternalLinkAlt;
+	
   constructor() { }
 
   ngOnInit(): void {
