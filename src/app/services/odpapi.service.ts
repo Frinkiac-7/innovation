@@ -11,7 +11,7 @@ export class OdpapiService {
 
 	url = 'https://opendata.worcesterma.gov/api/3/action/datastore_search?resource_id=7b8bd90e-22ae-4ede-a7af-0ca5997ba07f&limit=100000';
 
-	allPackages = 'https://opendata.worcesterma.gov/api/3/action/current_package_list_with_resources?limit=10000';
+	allPackages = 'https://opendata.worcesterma.gov/api/3/action/current_package_list_with_resources';
 
   constructor(private http: HttpClient) { }
 
