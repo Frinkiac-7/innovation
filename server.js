@@ -10,7 +10,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 
-const whitelist = ['https://innosb.herokuapp.com']; // list of allow domain
+const whitelist = ['http://localhost:3000']; // list of allow domain
 
 const corsOptions = {
     origin: function (origin, callback) {
