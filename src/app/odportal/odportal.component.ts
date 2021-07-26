@@ -11,13 +11,15 @@ import { Odp } from '../interfaces/odp';
 })
 export class OdportalComponent implements OnInit {
 
-	totalSets = 50;
+	public totalDatasets!: Odp;
 	public totalRecords!: Odp;
+	public serviceResponse!: Odp;
 	faChartLine = faChartLine;
 	faEye = faEye;
 	faStar = faStar;
+	faStarHalfAlt = faStarHalfAlt;
 	faExtLinkAlt = faExternalLinkAlt;
-	public serviceResponse!: Odp
+	faSearchPlus = faSearchPlus;
 	
   getAPIData() {
 		this.api.getFullApiResponse().subscribe((data: any) => {
@@ -41,11 +43,12 @@ export class OdportalComponent implements OnInit {
 	
   ngOnInit(): void {
 
+		this.api.getAllPackageData().subscribe((data: any) => {
+		this.totalDatasets = data.length;
+		})
+
 		this.api.getFullApiResponse().subscribe((data: any) => {
-			this.serviceResponse = data;
-			this.totalRecords = data.result.records.length
-			console.log('this.totalRecords:', this.totalRecords)
-			console.log('this.serviceResponse:', this.serviceResponse)
+			this.totalRecords = data.result.total
 		})
 		
 	}

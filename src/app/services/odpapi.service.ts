@@ -11,21 +11,24 @@ export class OdpapiService {
 
 	url = 'https://opendata.worcesterma.gov/api/3/action/datastore_search?resource_id=7b8bd90e-22ae-4ede-a7af-0ca5997ba07f&limit=100000';
 
-	// 'https://opendata.worcesterma.gov/api/3/action/datastore_search?resource_id=7b8bd90e-22ae-4ede-a7af-0ca5997ba07f&limit=100000'
+	allPackages = 'https://opendata.worcesterma.gov/api/3/action/current_package_list_with_resources?limit=10000';
 
   constructor(private http: HttpClient) { }
 
+	getAllPackageData() {
+    return this.http.get<Odp>(this.allPackages).pipe(map((data) => {
+      return data.result;
+    }))
+	}
+
 	getRecords() {
     return this.http.get<Odp>(this.url).pipe(map((data) => {
-      console.log('API returned ' + data.result.records.length + ' records');
-      return data.result.records;
+      return data;
     }))
 	}
 
 	getFullApiResponse() {
     return this.http.get<Odp>(this.url).pipe(map((data) => {
-      // console.log('API returned ' + data.result.records.length + ' records');
-      console.log('API returned:', data);
       return data;
     }))
   }

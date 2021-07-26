@@ -11,15 +11,15 @@
 		<p>
 			The City of Worcester firmly believes that access to public data should be readily available to anyone who wants it.  Launched in 2019, the city's open data portal has provided an easy to use platform for those needing access to available records.  
 		</p>
-		<div class="max-w-max m-4">
+		<div class="max-w-max m-4 text-center">
 			<div class="grid lg:grid-cols-3 grid-cols-1 rounded-2xl">
-				<div class="m-4 gap-6 bg-gray-200 rounded-2xl mx-5 my-8 p-8 shadow-2xl hover:bg-green-100">
-					<h2 class="text-center border-b border-black mb-4">
+				<div class="m-4 gap-6 bg-gray-200 rounded-2xl mx-5 my-8 p-8 shadow-2xl hover:bg-green-50">
+					<h2 class="border-b border-black mb-4">
 						<fa-icon [icon]="faChartLine" size="2x"></fa-icon>
 						Visualizations
 					</h2>
 					<p>
-						Let's face it, raw data can be complex.  Sometimes searching through thousands of records isn't the optimal way to get answers.  Click below to see data visualizations designed by the Office of Urban Innovation to assist residents get the information they want quickly and easily.  
+						Let's face it, raw data can be complex.  Sometimes searching through thousands of records isn't the optimal way to get answers.  Click below to see data visualizations designed by the Office of Urban Innovation.  
 					</p>
 					<button class="m-2 text-white bg-button hover:bg-gray-700 p-1 rounded-xl hover:text-opacity-100 has-tooltip">
 						<a href="https://public.tableau.com/profile/cityofworcesterma.innovationoffice/" target="new" class="uppercase text-sm block lg:p-2 py-1 px-0">
@@ -31,13 +31,13 @@
 						</a>
 					</button>
 				</div>
-				<div class="m-4 gap-6 bg-gray-200 rounded-2xl mx-5 my-8 p-8 shadow-2xl hover:bg-green-100">
-					<h2 class="text-center border-b border-black mb-4">
+				<div class="m-4 gap-6 bg-gray-200 rounded-2xl mx-5 my-8 p-8 shadow-2xl hover:bg-green-50">
+					<h2 class="border-b border-black mb-4">
 						<fa-icon [icon]="faEye" size="2x"></fa-icon>
 						Dataset Statistics
 					</h2>
 					<p>
-						So what does <strong class="italic">Informing Worcester</strong> offer?  The Innovation Office is constantly adding new datasets for public consumption.  Currently, there are {{ totalSets }} comprising {{ totalRecords }} records. 
+						Visit <strong class="italic">Informing Worcester</strong> and see what it has to offer.  The Innovation Office is constantly adding new datasets for public consumption.  Currently, there are {{ totalDatasets }} datasets combining for a total of {{ totalRecords }} records. 
 					</p>
 					<button class="m-2 text-white bg-button hover:bg-gray-700 p-1 rounded-xl hover:text-opacity-100 has-tooltip">
 						<a href="https://opendata.worcesterma.gov" target="new" class="uppercase text-sm block lg:p-2 py-1 px-0">
@@ -49,16 +49,17 @@
 						</a>
 					</button>
 				</div>
-				<div class="m-4 gap-6 bg-gray-200 rounded-2xl mx-5 my-8 p-8 shadow-2xl hover:bg-green-100">
-					<h2 class="text-center border-b border-black mb-4">
+				<div class="m-4 gap-6 bg-gray-200 rounded-2xl mx-5 my-8 p-8 shadow-2xl hover:bg-green-50">
+					<h2 class="border-b border-black mb-4">
 						<fa-icon [icon]="faStar" size="2x"></fa-icon>
 						Showcase
 					</h2>
 					<p>
-						<strong class="italic">Informing Worcester</strong> provides access to municipal data ranging from public safety incidents to requests lodged via our <a href="http://www.worcesterma.gov/customer-service">Customer Service Request System (CSRS)</a>.    
+						<strong class="italic">Informing Worcester</strong> provides access to municipal data ranging from public safety incidents, building permits and inspections as well as issues reported using the city's Customer Service Request System (CSRS).    
 					</p>
-					<button class="m-2 text-white bg-button hover:bg-gray-700 p-1 rounded-xl hover:text-opacity-100 uppercase text-sm block lg:p-2 py-1 px-0" (click)="getAPIRecords()">
+					<button class="m-2 text-white bg-button hover:bg-gray-700 p-1 rounded-xl hover:text-opacity-100 uppercase text-md lg:p-2 py-1 px-0" (click)="getAPIRecords()">
 						Show Me!
+						<fa-icon [icon]="faSearchPlus" size="xs"></fa-icon>
 					</button>
 				</div>
 			</div>
