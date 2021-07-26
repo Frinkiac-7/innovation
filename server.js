@@ -12,7 +12,7 @@ const app = express();
 
 app.use(requireHTTPS);
 app.use(cors({
-	origin: 'https://innosb.herokuapp.com'
+	origin: '*', 
 }));
 
 app.use(express.static('./dist/innovation'));
