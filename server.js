@@ -11,7 +11,9 @@ const cors = require('cors');
 const app = express();
 
 app.use(requireHTTPS);
-app.use(cors());
+app.use(cors({
+	origin: 'https://innosb.herokuapp.com'
+}));
 
 app.use(express.static('./dist/innovation'));
 app.get('/*', function(req, res) {
