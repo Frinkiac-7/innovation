@@ -10,7 +10,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 
-const whitelist = ['http://localhost:3000']; // list of allow domain
+const whitelist = ['*']; // list of allow domain
 
 const corsOptions = {
     origin: function (origin, callback) {
