@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -7,8 +6,6 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
-	faExtLinkAlt = faExternalLinkAlt;
 
   constructor() { }
 

@@ -1,7 +1,6 @@
 import { OdpapiService } from './../services/odpapi.service';
 import { RouterTestingModule } from '@angular/router/testing';
 import { Component, OnInit } from '@angular/core';
-import { faChartLine, faEye, faStar, faStarHalfAlt, faExternalLinkAlt, faIdCard, faRobot, faFileContract, faSchool, faSearchPlus } from '@fortawesome/free-solid-svg-icons';
 
 import { Odp } from '../interfaces/odp';
 @Component({
@@ -14,12 +13,6 @@ export class OdportalComponent implements OnInit {
 	public totalDatasets!: Odp;
 	public totalRecords!: Odp;
 	public serviceResponse!: Odp;
-	faChartLine = faChartLine;
-	faEye = faEye;
-	faStar = faStar;
-	faStarHalfAlt = faStarHalfAlt;
-	faExtLinkAlt = faExternalLinkAlt;
-	faSearchPlus = faSearchPlus;
 	
   getAPIData() {
 		this.api.getFullApiResponse().subscribe((data: any) => {

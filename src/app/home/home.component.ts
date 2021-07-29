@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faCoffee, faRobot, faTasks, faComments } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +7,6 @@ import { faCoffee, faRobot, faTasks, faComments } from '@fortawesome/free-solid-
 })
 export class HomeComponent implements OnInit {
 
-	faCoffee = faCoffee;
-	faRobot = faRobot;
-	faTasks = faTasks;
-	faComments = faComments;
-	
   constructor() { }
 
   ngOnInit(): void {
