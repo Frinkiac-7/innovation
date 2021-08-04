@@ -13,7 +13,8 @@ export class OdportalComponent implements OnInit {
 	public totalDatasets!: Odp;
 	public totalRecords!: Odp;
 	public serviceResponse!: Odp;
-	
+	public pkg!: Odp;
+
   getAPIData() {
 		this.api.getFullApiResponse().subscribe((data: any) => {
 			this.serviceResponse = data;
@@ -36,7 +37,14 @@ export class OdportalComponent implements OnInit {
 	
   ngOnInit(): void {
 
-		this.api.getAllPackageData().subscribe((data: any) => {
+		this.api.getPkgList().subscribe((data: any) => {
+			this.pkg = data
+			this.totalDatasets = data.length;
+			console.log('this.pkg:', this.pkg)
+			console.log('this.totalDatasets:', this.totalDatasets)
+		})
+
+		this.api.getPkgsWithResources().subscribe((data: any) => {
 		this.totalDatasets = data.length;
 		})
 

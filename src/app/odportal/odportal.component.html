@@ -1,5 +1,5 @@
 <div class="px-4">
-	<div class="bg-center bg-contain bg-img-opendata text-white rounded-2xl mx-auto my-8 p-8 text-center">
+	<div class="grid grid-cols-1 bg-center bg-cover bg-img-pathway bg-no-repeat text-white rounded-2xl mx-auto my-8 p-8 text-center">
 		<h1 class="tracking-widest text-3xl font-medium mb-2">Open Data Portal</h1>
 		<h2 class="font-medium text-sm mb-4 uppercase tracking-wide">City of Worcester, MA</h2>
 		<p class="text-white text-sm rounded-full m-4">
@@ -11,13 +11,12 @@
 		<p>
 			The City of Worcester firmly believes that access to public data should be readily available to anyone who wants it.  Launched in 2019, the city's open data portal has provided an easy to use platform for those needing access to available records.  
 		</p>
-		<div class="pb-32 pt-16">
+		<div class="pt-10">
 			<div class="mx-auto">
 				<div class="flex flex-wrap flex-row-reverse items-center">
 					<div class="md:w-1/2 w-full lg:pl-20 md:pl-10 sm:pl-0 pl-0">
 						<div class="py-2 text-color">
-							<!-- <h1 class="text-2xl lg:text-6xl tracking-tighter md:leading-snug f-f-l font-black">Wordy words for ready people</h1> -->
-							<p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit perspiciatis amet eum ex similique nisi a debitis deserunt, quasi expedita nemo necessitatibus ut recusandae labore optio quod voluptatum facilis consequuntur.
+							<p class="m-4">The goal of this portal is to enable citizens and those to become more engaged with their local government. The Open Data Portal does this by providing free and easy access to City's public information data for use by a broad audience. The release of this open data portal marks another milestone in our efforts to a transparent and open City government. We will continue our work to curate high-quality and up-to-date datasets and develop a platform that is widely accessible. 
 							</p>
 						</div>
 					</div>
@@ -35,13 +34,10 @@
 						Visualizations
 					</h2>
 					<p>
-						Let's face it, raw data can be complex.  Sometimes searching through thousands of records isn't the optimal way to get answers.  Click below to see data visualizations designed by the Office of Urban Innovation.  
+						Let's face it, raw data can be complex.  Sometimes searching through thousands of records isn't the best way to get answers.  Click below to see data visualizations designed by the Office of Urban Innovation.  
 					</p>
-					<button class="m-2 text-white bg-button hover:bg-gray-700 p-1 rounded-xl hover:text-opacity-100 has-tooltip">
-						<a href="https://public.tableau.com/profile/cityofworcesterma.innovationoffice/" target="new" class="uppercase text-sm block lg:p-2 py-1 px-0">
-							<span class="tooltip text-white normal-case -mt-3 italic hover:italic">
-								Visit
-							</span>
+					<button class="m-2 text-white bg-button hover:bg-gray-700 p-1 rounded-xl hover:text-opacity-100">
+						<a href="https://public.tableau.com/profile/cityofworcesterma.innovationoffice/" target="new" class="text-sm block lg:p-2 py-1 px-0">
 							Gallery
 						</a>
 					</button>
@@ -51,29 +47,28 @@
 						Dataset Statistics
 					</h2>
 					<p>
-						Visit <strong class="italic">Informing Worcester</strong> and see what it has to offer.  The Innovation Office is constantly adding new datasets for public consumption.  Currently, there are {{ totalDatasets }} datasets combining for a total of {{ totalRecords }} records. 
+						<strong class="italic">Informing Worcester</strong> has {{ totalDatasets }} datasets totalling over 2 million records of city data.  The Innovation Office team is continually working to increase the available data with new additions. Visit the portal to see what it has to offer.
 					</p>
-					<button class="m-2 text-white bg-button hover:bg-gray-700 p-1 rounded-xl hover:text-opacity-100 has-tooltip">
-						<a href="https://opendata.worcesterma.gov" target="new" class="uppercase text-sm block lg:p-2 py-1 px-0">
-							<span class="tooltip text-white normal-case -mt-3 italic hover:italic">
-								Visit
-							</span>
+					<button class="m-2 text-white bg-button hover:bg-gray-700 p-1 rounded-xl hover:text-opacity-100">
+						<a href="https://opendata.worcesterma.gov" target="new" class="text-sm block lg:p-2 py-1 px-0">
 							Data Portal
 						</a>
 					</button>
 				</div>
 				<div class="m-4 gap-6 bg-gray-200 rounded-2xl mx-5 my-8 p-8 shadow-2xl">
 					<h2 class="border-b border-black mb-4">
-						Showcase
+						Showcases
 					</h2>
 					<p>
-						<strong class="italic">Informing Worcester</strong> provides access to municipal data ranging from public safety incidents, building permits and inspections as well as issues reported using the city's Customer Service Request System (CSRS).    
+						<strong class="italic">Informing Worcester's</strong> showcases highlights some of the ways that the City's available data can be used in informative and creative ways.  As we continue to grow, new showcases will be added as they are available.    
 					</p>
-					<button class="m-2 text-white bg-button hover:bg-gray-700 p-1 rounded-xl hover:text-opacity-100 uppercase text-md lg:p-2 py-1 px-0" (click)="getAPIRecords()">
-						Show Me!
+					<button class="m-2 text-white bg-button hover:bg-gray-700 p-1 rounded-xl hover:text-opacity-100">
+						<a href="https://opendata.worcesterma.gov/showcase/" target="new" class="text-sm block lg:p-2 py-1 px-0">
+							Showcases
+						</a>
 					</button>
 				</div>
 			</div>
-		</div>	
-	</div>	
+		</div>
+	</div>
 </div>
