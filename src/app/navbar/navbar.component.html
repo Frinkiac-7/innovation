@@ -1,49 +1,106 @@
-<header class="flex flex-wrap items-center bg-white lg:px-2 lg:py-2 px-2 py-2 border-black border-solid border-2 m-2">
-	<div class="flex-1 flex justify-between items-center">
-		<img src="../../assets/cow_logo-InlineStyle.svg" alt="" height="175" width="200">
+<nav class="bg-white shadow lg:block hidden">
+	<div class="mx-auto container px-6 py-2 xl:py-0">
+		<div class="flex items-center justify-between">
+			<div class="flex-1 flex justify-between items-center">
+				<img src="../../assets/cow_logo-InlineStyle.svg" alt="" height="175" width="200">
+			</div>
+			<div class="flex">
+				<div class="hidden lg:flex md:mr-6 xl:mr-16">
+					<a routerLink="/home" routerLinkActive="active" class="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-button focus:text-gray-100 focus:outline-none transition duration-150 ease-in-out">Home</a>
+					<a routerLink="/initiatives" routerLinkActive="active" class="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-button focus:text-gray-100 focus:outline-none transition duration-150 ease-in-out">Initiatives</a>
+					<a routerLink="/opendataportal" routerLinkActive="active" class="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-button focus:text-gray-100 focus:outline-none focus:border-b-50 transition duration-150 ease-in-out">Open Data</a>
+					<a routerLink="/bios" routerLinkActive="active" class="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-button focus:text-gray-100 focus:outline-none transition duration-150 ease-in-out">The Team</a>
+					<a href="http://worcesterma.gov" target="new" class="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-button focus:text-gray-100 focus:outline-none transition duration-150 ease-in-out">WorcesterMA.gov</a>
+				</div>
+			</div>
+		</div>
 	</div>
-
-	<label for="menu-toggle" class="lg:hidden block">
-		<svg class="fill-current text-gray-900"
-			xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-			<title>menu</title>
-			<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-		</svg>
-	</label>
-
-	<input class="hidden" type="checkbox" id="menu-toggle" />
-
-	<div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
-		<nav>
-			<ul class="lg:flex items-center justify-between text-base text-gray-100 pt-2 lg:pt-0 m-2">
-				<li>
-					<button class="bg-button m-2 rounded-xl">
-						<a routerLink="/home" routerLinkActive="active" class="block m-1 lg:p-2 py-1 px-0 hover:text-black">Home</a>
-					</button>
-				</li>
-				<li>
-					<button class="m-2 bg-button hover:text-black rounded-xl">
-						<a routerLink="/initiatives" routerLinkActive="active" class="block m-1 lg:p-2 py-1 px-0 hover:text-black">Initiatives</a>
-					</button>
-				</li>
-				<li>
-					<button class="m-2 bg-button hover:text-black rounded-xl">
-						<a routerLink="/opendataportal" routerLinkActive="active" class="block m-1 lg:p-2 py-1 px-0 hover:text-black">Open Data</a>
-					</button>
-				</li>
-				<li>
-					<button class="m-2 bg-button hover:text-black rounded-xl">
-						<a routerLink="/bios" routerLinkActive="active" class="block m-1 lg:p-2 py-1 px-0 hover:text-black">Meet the Team</a>
-					</button>
-				</li>
-				<li>
-					<button class="m-2 hover: bg-button hover:bg-gray-700 p-1 rounded-xl hover:text-opacity-100">
-						<a href="http://worcesterma.gov" target="new" class="uppercase text-sm block lg:p-2 py-1 px-0 hover:textblack">
-							Worcesterma.gov
-						</a>
-					</button>
-				</li>
-			</ul>
-		</nav>
+</nav>
+<nav>
+	<div class="py-4 px-6 w-full flex lg:hidden justify-between items-center bg-white fixed top-0 z-40">
+		<div class="flex-1 flex justify-between items-center">
+			<img src="../../assets/cow_logo-InlineStyle.svg" alt="" height="175" width="200">
+		</div>
+		<div class="flex items-center">
+			<!-- Hamburger icon -->
+			<div id="menu" class="text-gray-800" (click)="isMenu=true">
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24"
+					viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+					stroke-linejoin="round">
+					<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+					<line x1="4" y1="6" x2="20" y2="6" />
+					<line x1="4" y1="12" x2="20" y2="12" />
+					<line x1="4" y1="18" x2="20" y2="18" />
+				</svg>
+			</div>
+		</div>
 	</div>
-</header>
+	<!--Mobile responsive sidebar-->
+	<div *ngIf="isMenu" class="absolute w-full h-full z-40 xl:hidden" id="mobile-nav">
+		<div class="bg-gray-800 opacity-50 w-full h-full mt-4" (click)="isMenu=false"></div>
+		<div
+			class="w-64 fixed overflow-y-auto z-40 top-0 bg-white shadow h-full flex-col justify-between xl:hidden pb-4 transition duration-150 ease-in-out">
+			<div class="px-6 h-full">
+				<div class="flex flex-col justify-between h-full w-full">
+					<div>
+						<div class="flex-1 flex justify-between items-center pt-2">
+							<img src="../../assets/cow_logo-InlineStyle.svg" alt="" height="175" width="200">
+							<div id="cross" class="text-gray-800" (click)="isMenu=false">
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x"
+										width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+										stroke="currentColor" fill="none" stroke-linecap="round"
+										stroke-linejoin="round">
+										<path stroke="none" d="M0 0h24v24H0z"></path>
+										<line x1="18" y1="6" x2="6" y2="18"></line>
+										<line x1="6" y1="6" x2="18" y2="18"></line>
+								</svg>
+							</div>
+						</div>					
+						<ul class="f-m-m">
+							<a class="cursor-pointer">
+								<li class="text-gray-800 pt-10">
+									<div class="flex items-center">
+										<a routerLink="/home" routerLinkActive="active" (click)="isMenu=false" class="block lg:p-2 py-1 px-0 text-gray-800 xl:text-base md:text-2xl text-base ml-3 hover:bg-gray-100">Home</a>
+										<!-- <p class="text-gray-800 xl:text-base md:text-2xl text-base ml-3">Home</p> -->
+									</div>
+								</li>
+							</a>
+							<a class="cursor-pointer">
+								<li class="text-gray-800 pt-8">
+									<div class="flex items-center justify-between">
+										<!-- <div class="flex items-center"> -->
+											<a routerLink="/initiatives" routerLinkActive="active" (click)="isMenu=false" class="block lg:p-2px-0 text-gray-800 xl:text-base md:text-2xl text-base ml-3 hover:bg-gray-100">Initiatives</a>
+										<!-- </di	v> -->
+									</div>
+								</li>
+							</a>
+							<a class="cursor-pointer">
+								<li class="text-gray-800 pt-8">
+									<div class="flex items-center justify-between">
+										<div class="flex items-center">
+											<a routerLink="/opendataportal" routerLinkActive="active" (click)="isMenu=false" class="block lg:p-2px-0 text-gray-800 xl:text-base md:text-2xl text-base ml-3 hover:bg-gray-100">Open Data</a>
+										</div>
+									</div>
+								</li>
+							</a>
+							<a class="cursor-pointer">
+								<li class="text-gray-800 pt-8">
+									<div class="flex items-center">
+										<a routerLink="/bios" routerLinkActive="active" (click)="isMenu=false" class="p-2 py-1 px-0 text-gray-800 xl:text-base md:text-2xl text-base ml-3 hover:bg-gray-100">The Team</a>
+									</div>
+								</li>
+							</a>
+							<li class="text-gray-800 pt-8 cursor-pointer">
+								<div class="flex items-center justify-between">
+									<div class="flex items-center">
+										<a href="http://worcesterma.gov" target="new" class="block lg:p-2 py-1 px-0 text-gray-800 xl:text-base md:text-2xl text-base ml-3 hover:bg-gray-100">WorcesterMA.gov</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>

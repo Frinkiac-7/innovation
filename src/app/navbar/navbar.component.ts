@@ -9,7 +9,13 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+	isList: number = 0;
+  isMenu: boolean = false;
+  isSearch: boolean = false;
+
+	active_status: number = 1;
+
+	ngOnInit(): void {
   }
 
 }
