@@ -1,6 +1,6 @@
 module.exports = {
   purge: {
-		enabled: true,
+		enabled: process.env.NODE_ENV === "production",
 		content: ["./src/app/**/*.{html,ts}"]
 	},
   darkMode: false, // or 'media' or 'class'
@@ -17,8 +17,9 @@ module.exports = {
 			},
 			backgroundImage: theme => ({
 				'img-pathway': "url('src/assets/innovation-office-resized.jpg')",
-				'img-opendata': "url('src/assets/jared-arango-1-mh6U3qeGQ-unsplash.jpg')",
 				'img-team': "url('src/assets/marvin-meyer-SYTO3xs06fU-unsplash.jpg')",
+				'img-kiosk': "url('src/assets/digital-kiosk.jpg')",
+				'img-opendata': "url('src/assets/opendataportal.png')",
 				// 'footer-texture': "url('/img/footer-texture.png')",
 	 		}),
 		},
