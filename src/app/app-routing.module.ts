@@ -13,7 +13,8 @@ const routes: Routes = [
 	{ path: 'bios', component: BiosComponent },
 	{ path: 'opendataportal', component: OdportalComponent },
 	{ path: 'initiatives', component: InitiativesComponent },
-	{ path: '', component: HomeComponent }
+	{ path: '', component: HomeComponent },
+	{ path: '**', component: OdportalComponent }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
