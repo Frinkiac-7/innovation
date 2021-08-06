@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { BiosComponent } from './bios/bios.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { InitiativesComponent } from './initiatives/initiatives.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { InitiativesComponent } from './initiatives/initiatives.component';
     OdportalComponent,
     HomeComponent,
     BiosComponent,
-    InitiativesComponent
+    InitiativesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
