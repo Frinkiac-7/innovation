@@ -26,6 +26,8 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@types/d3": "^7.0.0",
+    "billboard.js": "^3.1.5",
     "jshint": "^2.13.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",

@@ -40,9 +40,12 @@
 				<h2 class="font-medium text-sm text-indigo-400 mb-4 uppercase tracking-wide">City Data at your Finger Tips
 				</h2>
 				<p>
-					<span class="text-lg">Informing Worcester</span> is the City's publicly accessible open data portal. This portal is a means by which city government can provide free and easy access to city data. No registration is required for access.
-					</p>
-					<p>The portal currently has <span class="text-md italic font-extrabold text-red-600">{{ totalDatasets }}</span> datasets containing over <span class="text-md italic font-extrabold text-red-600">{{ totalRecords.toLocaleString('en', {useGrouping: true}) }}</span> records of city data.  The Innovation Office team is continually working to increase the available data with new additions. Visit the portal to see what it has to offer.
+					<span class="text-lg">Informing Worcester</span> is the City's publicly accessible open data portal which is used to provide free and easy access to city data. It currently has <span class="text-md italic font-extrabold text-red-600">{{ totalDatasets }}</span> datasets containing over <span class="text-md italic font-extrabold text-red-600">{{ totalRecords.toLocaleString('en', {useGrouping: true}) }}</span> records of city data.  The available data is sourced from numerous City departments and covers a variety of services.  
+				</p>
+
+				<div id="gaugeChart"></div>
+
+				<p>No registration is required for access.  The Innovation Office team is continually working to increase the available data with new additions. Visit the portal to see what it has to offer. 
 				</p>
 				<h1 class="text-xl font-medium mb-2 text-center">
 					See What's New and Recently Updated
