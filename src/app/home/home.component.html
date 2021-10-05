@@ -35,12 +35,14 @@
 		<div class="rounded-sm grid grid-cols-1">
 			<div class="bg-gray-200 shadow-xl rounded-sm m-2 p-4">
 				<h1 class="text-xl font-medium border-solid border-black border-b-2 text-center">
-					Open Data Portal
+					Informing Worcester
 				</h1>
 				<h2 class="font-medium text-sm text-indigo-400 mb-4 uppercase tracking-wide">City Data at your Finger Tips
 				</h2>
-				<p class="text-black text-sm">
-					<strong>Informing Worcester</strong> is the City of Worcester publicly accessible open data portal. The portal is a means by which city government can provide transparency to residents and businesses. No registration is required for access.
+				<p>
+					<span class="text-lg">Informing Worcester</span> is the City's publicly accessible open data portal. This portal is a means by which city government can provide free and easy access to city data. No registration is required for access.
+					</p>
+					<p>The portal currently has <span class="text-md italic font-extrabold text-red-600">{{ totalDatasets }}</span> datasets containing over <span class="text-md italic font-extrabold text-red-600">{{ totalRecords.toLocaleString('en', {useGrouping: true}) }}</span> records of city data.  The Innovation Office team is continually working to increase the available data with new additions. Visit the portal to see what it has to offer.
 				</p>
 				<h1 class="text-xl font-medium mb-2 text-center">
 					See What's New and Recently Updated
