@@ -28,7 +28,22 @@
 			</div>
 		</div>
 		<div class="max-w-max m-4 text-center">
-			<div class="grid lg:grid-cols-3 grid-cols-1 rounded-sm">
+			<div class="m-4 gap-6 bg-gray-200 rounded-sm mx-5 my-8 p-8 shadow-2xl">
+				<h2 class="border-b border-black mb-4">
+					Dataset Statistics
+				</h2>
+				<p>
+					<strong class="italic">Informing Worcester</strong> has <span class="text-md italic font-extrabold text-red-600"> totalDatasets </span> datasets containing <span class="text-md italic font-extrabold text-red-600"> BILLIYUUUNS</span> records of city data.  The Innovation Office team is continually working to increase the available data with new additions. Visit the portal to see what it has to offer.
+				</p>
+				<button class="m-2 text-white bg-button hover:bg-gray-700 p-1 rounded-sm hover:text-opacity-100">
+					<a href="https://opendata.worcesterma.gov" target="new" class="text-sm block lg:p-2 py-1 px-0">
+						Data Portal
+					</a>
+				</button>
+			</div>
+		</div>
+		<div class="max-w-max m-4 text-center">
+			<div class="grid lg:grid-cols-2 grid-cols-1 rounded-sm">
 				<div class="m-4 gap-6 bg-gray-200 rounded-sm mx-5 my-8 p-8 shadow-2xl">
 					<h2 class="border-b border-black mb-4">
 						Visualizations
@@ -39,19 +54,6 @@
 					<button class="m-2 text-white bg-button hover:bg-gray-700 p-1 rounded-sm hover:text-opacity-100">
 						<a href="https://public.tableau.com/profile/cityofworcesterma.innovationoffice/" target="new" class="text-sm block lg:p-2 py-1 px-0">
 							Gallery
-						</a>
-					</button>
-				</div>
-				<div class="m-4 gap-6 bg-gray-200 rounded-sm mx-5 my-8 p-8 shadow-2xl">
-					<h2 class="border-b border-black mb-4">
-						Dataset Statistics
-					</h2>
-					<p>
-						<strong class="italic">Informing Worcester</strong> has {{ totalDatasets }} datasets totalling over 2 million records of city data.  The Innovation Office team is continually working to increase the available data with new additions. Visit the portal to see what it has to offer.
-					</p>
-					<button class="m-2 text-white bg-button hover:bg-gray-700 p-1 rounded-sm hover:text-opacity-100">
-						<a href="https://opendata.worcesterma.gov" target="new" class="text-sm block lg:p-2 py-1 px-0">
-							Data Portal
 						</a>
 					</button>
 				</div>
