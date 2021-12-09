@@ -1,27 +1,14 @@
-# Innovation
+# Office of Urban Innovation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+The Office of Urban Innovation's primary focus is to improve city government services and operations so as to ensure Worcester is well situated to address the needs of its residents, businesses, and visitors.
 
-## Development server
+## Genesis and Purpose
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project was initiated as a result of conversations green field exercise related to how different tech stacks could potentially improve the overall functionality of the city's website.  This repo was intended to serve as proof of concept as to how that could be accomplished.  
 
-## Code scaffolding
+## Planned enhancements
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The current iteration is primarily a static website built on Angular (v12.x) and Tailwind CSS.  Future releases will include dynamic content such as:
+  1) Info and datasets from the open data portal (aka Informing Worcester) using that platform's native API
+  2) Interactive visualizations using Tableau and/or other tools such as Billboard, D3, or ChartJs
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
