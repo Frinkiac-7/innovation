@@ -4,7 +4,6 @@ import { OdportalComponent } from './odportal/odportal.component';
 import { BiosComponent } from './bios/bios.component';
 import { InitiativesComponent } from './initiatives/initiatives.component';
 
-import { componentFactoryName } from '@angular/compiler';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
